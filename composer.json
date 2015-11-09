@@ -1,0 +1,12 @@
+{
+	"name"	:	"waiyan13/ecommerce",
+	"description"	:	"ecommerce website for small enterprise",
+	"version"	:	"0.0.1",
+	"type"	:	"project",
+	"license"	:	"MIT",
+	"author"	:	{
+		"name"	:	"Zaw Waiyan Lwin",
+		"email"	:	"zawwaiyanlwin1996@gmail.com",
+		"role"	:	"developer"
+	}
+}
