@@ -7,7 +7,8 @@ $html	=	<<<HTML
 		<li><a href = "#"><img src = "http://placehold.it/160x160"/></a></li>
 		<li><a href = "#"><img src = "http://placehold.it/160x160"/></a></li>
 		</ul>
-	</footer>
+</footer>
+</div>
 </body>
 </html>
 HTML;
