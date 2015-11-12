@@ -35,22 +35,17 @@ class user	{
         return true;
 	}
 
-	public function register()	{
+	public function register(array $userInfo)	{
 	try
        {
        $new_password = password_hash($upass, PASSWORD_DEFAULT);
 
-       $stmt = $this->db->prepare("INSERT INTO users(user_name, password, first_name, last_name, email, address_block, address_street, address_city, ph_no) 
-                                   VALUES(:user_name, :password, :first_name, :last_name, :email, :address_block, :address_street, :address_city, :ph_no)");  
-        $stmt->bindparam(":user_name", $user_name);
-        $stmt->bindparam(":password", $password);
-        $stmt->bindparam(":first_name", $first_name);
-        $stmt->bindparam(":last_name", $last_name);
-        $stmt->bindparam(":email", $email);
-        $stmt->bindparam(":address_block", $address_block);
-        $stmt->bindparam(":address_street", $first_name);
-        $stmt->bindparam(":address_city", $first_name);
-        $stmt->bindparam(":first_name", $first_name);            
+       $stmt = $this->db->prepare("INSERT INTO users(user_name, password, first_name, last_name, email, address_block, address_street, address_city, ph_no) VALUES(:value1,:value2,:value3,:value4,:value5,:value6,:value7,:value8,:value9)");
+       $counter = 1;
+       foreach ($userInfo as $key => $value) {
+         $stmt->bindparam("value{$counter}", $value);
+         $counter++;
+       }          
         $stmt->execute(); 
    
            return $stmt; 
