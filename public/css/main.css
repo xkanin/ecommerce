@@ -2,87 +2,84 @@ body	{
 
 }
 
-header	{
-	background-color: #0000FF;
-}
-
-header img	{
-	display: block;
+#wrapper	{
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-header	ul	{
+header	{
+	background-color: #FFFF00;
+}
 
+header img	{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+}
+
+header nav	{
+	background-color: #00FF00;
+	padding: 0.1em 0;
+}
+
+header ul	{
+	padding-left: 0;
 }
 
 header li	{
 	list-style-type: none;
 	display: inline;
-	padding: 0 2em;
-}
-
-header input	{
-	width: 90%;
-	margin-left: 4.5%;
-	margin-bottom: 0.5em;
+	padding: 1em;
 }
 
 header a	{
-	color: #FFFF00;
 	text-decoration: none;
 }
 
-article	{
-	width: 95%;
-	margin: 0 auto;
-	text-align: justify;
-}
-
-section li	{
-	list-style-type: none;
-	display: inline;
-}
-
-section img	{
+#loginForm	{
 	width: 30%;
-	height: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FF0000;
+}
+
+#login	{
+	width: 60%;
+	padding: 2em 0;
+	margin-top: 8em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8em;
+}
+
+#login label	{
+	display: block;
+}
+
+#login button	{
+	margin-top: 0.5em;
 }
 
 footer	{
-	width: 95%;
-	margin: 0 auto;
+	background-color: #FF00FF;
+}
+
+footer p	{
+	padding-left: 1em;
+	padding-top: 1em;
 }
 
 footer ul	{
-	padding-left: 0;
+	padding: 0.5em 1em;
 }
 
 footer li	{
-	list-style-type: none;
 	display: inline;
-	margin-right: 1em;
 }
 
 footer img	{
-	width: 50px;
-	height: 40px;
-}
-
-@media screen and (min-width: 36em)	{
-	body	{
-		
-	}
-
-	header input	{
-		height: 2em;
-		text-align: center;
-	}
-
-	article	{
-		width: 70%;
-		text-align: justify;
-		font-size: 1.5em;
-	}
+	height: auto;
+	max-width: 60px;
 }

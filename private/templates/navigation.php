@@ -8,8 +8,10 @@ $html	=	<<<HTML
 		<li><a href = "#">Products</a></li>
 		<li><a href = "#">About</a></li>
 		<li><a href = "#">Contact</a></li>
+		<li><input type = "search" placeholder="Search"/></li>
+		<li><a href = "?page=login">Login</a></li>
+		<li><a href = "#">Register</a></li>
 		</ul>
-		<input type = "search" placeholder="Search"/>
 	</nav>
 </header>
 HTML;
