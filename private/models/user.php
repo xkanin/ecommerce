@@ -5,7 +5,7 @@ class user	{
 	private $connection	=	NULL;
 
 	public function __construct( $dbConn )	{
-		$connection	=	$dbConn;
+		
 	}
 
 	public function login()	{
