@@ -8,5 +8,10 @@
 		"name"	:	"Zaw Waiyan Lwin",
 		"email"	:	"zawwaiyanlwin1996@gmail.com",
 		"role"	:	"developer"
+	},
+	"autoload"	:	{
+		"psr-4"	:	{
+			"restricted\\models"	:	"restricted/models",
+		}
 	}
 }
